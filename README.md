@@ -116,7 +116,7 @@ $chislo = 552.32;
 $numtoword = new NumberToWord('number');
 
 // Default option;
-$opttions = [
+$options = [
     'suffix' => 'цяло', 
     'fraction' => '', 
     'and' => 'и', 
