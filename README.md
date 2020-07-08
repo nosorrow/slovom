@@ -69,7 +69,7 @@ $chislo = 55.32;
 $numtoword = new NumberToWord('currency');
 
 // Default option;
-$opttions = [
+$options = [
     'suffix' => 'лв.', 
     'fraction' => 'ст.', 
     'and' => 'и', 
