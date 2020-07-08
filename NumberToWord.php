@@ -1,7 +1,7 @@
 <?php
 /**
  * Class NumberToWord
- * Number to words (number spelling) in Bulgarian
+ * Number spelling in Bulgarian
  */
 
 final class NumberToWord
