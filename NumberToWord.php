@@ -50,7 +50,7 @@ final class NumberToWord
      * NumberToWordClass constructor.
      * @internal param array $edinici
      */
-    public function __construct($number, $options = 'number')
+    public function __construct($options = 'number')
     {
         $this->class_opt = $options;
 
