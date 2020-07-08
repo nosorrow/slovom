@@ -80,9 +80,9 @@ $opttions = [
 ];
 $numtoword->setOptions($opttions);
 
-$num_1 = $numtoword->setNumber($chislo);
+$num = $numtoword->setNumber($chislo);
 
-echo $num_1->number . ' ==> ' . $num_1->word;
+echo $num->toNumber() . ' ==> ' . $num->toWord();
 
 // output : 55.32 ==> петдесет и пет лв. и тридест и две ст.
 
