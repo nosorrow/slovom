@@ -101,7 +101,7 @@ echo $num->toNumber() . ' ==> ' . $num->toWord();
 
 // second param is optional. true by default.
 
-echo $cass->slovom($chislo, true); 
+echo $numtoword->slovom($chislo, true); 
 
 ```
 
