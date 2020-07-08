@@ -2,7 +2,7 @@
 /*
  * Include Class NumberToWordClass
  */
-include_once "vendor/autoload.php";
+include_once "NumberToWord.php";
 
 $num = new NumberToWord('number');
 $curr = new NumberToWord('currency');
