@@ -2,7 +2,9 @@
 
 ### Getting Started
 
-git clone https://github.com/nosorrow/number-to-word.git
+```text
+git clone https://github.com/nosorrow/slovom.git
+```
 Or  
 
 Make composer.json file and Just tell composer to use source if available:
@@ -36,7 +38,7 @@ Copy this in your composer.json
         "name": "plamenorama/numbertoword",
         "version": "1.1",
         "source": {
-          "url": "https://github.com/nosorrow/number-to-word.git",
+          "url": "https://github.com/nosorrow/slovom.git",
           "type": "git",
           "reference": "master"
         },

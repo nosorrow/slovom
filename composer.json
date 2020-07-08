@@ -25,7 +25,7 @@
                 "name": "plamenorama/numbertoword",
                 "version": "1.1",
                 "source": {
-                    "url": "https://github.com/nosorrow/number-to-word.git",
+                    "url": "https://github.com/nosorrow/slovom.git",
                     "type": "git",
                     "reference": "master"
                 },
