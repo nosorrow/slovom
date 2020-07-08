@@ -78,18 +78,18 @@ $options = [
     'exp' => 12, // max number is 999*10E12+999
     'decimal' => 2 // The number of decimal digits to round to.
 ];
-$numtoword->setOptions($opttions);
+$numtoword->setOptions($options);
 
-$num = $numtoword->setNumber($chislo);
+$numtoword->setNumber($chislo);
 
-echo $num->toNumber() . ' ==> ' . $num->toWord();
+echo $numtoword->toNumber() . ' ==> ' . $numtoword->toWord();
 
 // output : 55.32 ==> петдесет и пет лв. и тридест и две ст.
 
 
-$num = $numtoword->setNumber($chislo, false); 
+$numtoword->setNumber($chislo, false); 
 
-echo $num->toNumber() . ' ==> ' . $num->toWord();
+echo $numtoword->toNumber() . ' ==> ' . $numtoword->toWord();
 
 // output : 55.32 ==> петдесет и пет лв. и 32 две ст.
 
@@ -108,28 +108,17 @@ echo $numtoword->slovom($chislo, true);
 ### Number
 
 ```php
-
 <?php
 
-$chislo = 552.32;
+$num = new NumberToWord('number');
 
-$numtoword = new NumberToWord('number');
+$num->setNumber(256);
+echo $num->toWord() . "\n";
 
-// Default option;
-$options = [
-    'suffix' => 'цяло', 
-    'fraction' => '', 
-    'and' => 'и', 
-    'negative_word' => 'минус', 
-    'negative' => true, 
-    'exp' => 12, 
-    'decimal' => false
-];
+$num->setNumber(555);
+echo $num->toWord() . "\n";
 
-$numtoword->setOptions($opttions);
-
-$numtoword->setNumber($chislo);
-
-echo $numtoword->toNumber() . ' ==> ' . $numtoword->toWord();
+$num->setNumber(666);
+echo $num->toWord() . "\n";
 
 ```
