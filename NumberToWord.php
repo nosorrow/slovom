@@ -133,7 +133,7 @@ final class NumberToWord
         if ($i < 0 && $this->options['negative'] === true) {
             $this->negative = sprintf(' %s ', $this->options['negative_word']);
             $negative = '-';
-            $i = abs($i);
+            $i = abs((float)$i);
 
         } elseif ($i < 0 && $this->options['negative'] === false) {
             $this->error = 'Въведете положително число!';

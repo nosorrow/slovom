@@ -7,7 +7,7 @@ include_once "NumberToWord.php";
 $num = new NumberToWord('number');
 $curr = new NumberToWord('currency');
 
-$chislo = (isset($_GET['number'])) ? $_GET['number'] : '';
+$chislo = $_GET['number'] ?? 0;
 
 $num->setNumber($chislo);
 $curr->setNumber($chislo);
