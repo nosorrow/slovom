@@ -1,7 +1,5 @@
 <?php
-/*
- * Include Class NumberToWordClass
- */
+
 include_once "NumberToWord.php";
 
 $num = new NumberToWord('number');
